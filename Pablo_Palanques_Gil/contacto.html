@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Contacto con Pablo Palanques">
+        <meta name="author" content="Pablo Palanques Gil">
+        <title>Contacto</title>
+        <link rel="stylesheet" type="text/css" href="estiloCSS.css" media="screen" />
+        <!-- Vinculamos el script .js externo -->
+        <script src="script.js"></script>
+    </head>
+<body>
+    <div id="wrapperContacto" class="wrapper">
+        <div id="cabecera" class="cabecera">
+        <header>
+        <h1>Contacto</h1>
+        </header>
+        </div>
+    <section  id="navegacion" class="menu">
+        <div>
+        <nav>
+            <div><button id="switchTema2" class="switchTema" name="Tema Oscuro" onclick="CambiarModo()"></button></div>
+            <ul>
+                <li><a href="index.html" title="Ir a página principal.">Pablo Palanques</a></li>
+                <li><a href="contacto.html" title="Ir a página de contacto.">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+    </section>
+    <div id="contenidoContacto" class="contenido">
+        <h2 class="primerh2">Formulario</h2>
+        <form id="form" action="mailto:pabpalgil@alu.edu.gva.es" method="post" enctype="text/plain">
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" size="20">
+            <br>
+            <label for="mail">E-mail:</label>
+            <input type="text" name="mail" id="mail" size="40">
+            <br>
+            <div id="radioBtns">¿Cuál crees que es la solución a la <dfn title="Si el universo es tan viejo y tan extenso, ¿dónde están todos los aliens?">la paradoja de Fermi</dfn>?
+            <br>
+            <input type="radio" name="fermi" id="fermi_lejos" value="lejos">
+            <label for="fermi_lejos">Están ahí fuera pero aun no nos han encontrado.</label>
+            <br>
+            <input type="radio" name="fermi" id="fermi_ocultos" value="ocultos">
+            <label for="fermi_ocultos">Nos han encontrado pero no se dejan ver.</label>
+            <br>
+            <input type="radio" name="fermi" id="fermi_nadie" value="nadie">
+            <label for="fermi_nadie">No hay nadie ahí fuera, seremos los primeros.</label>
+            </div>
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="comentario" cols="45" rows="10">Hola Pablo, ¿cuál crees tú que es la solución a la paradoja de Fermi?</textarea>
+            <br>
+            <div class="botones">
+            <input type="submit" id="Enviar" value="Enviar">
+            <input type="reset" value="Borrar todo">
+            </div>
+        </p>
+        </form>
+    </div>
+    </section>
+    <div id="pie" class="pie">
+    <footer>
+        <a href="index.html" title="Ir a la página principal.">Volver a la página principal.</a>
+    </footer>
+    </div>
+</div>
+</body>

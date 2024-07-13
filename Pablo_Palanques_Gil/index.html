@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de Pablo Palanques Gil">
+    <meta name="author" content="Pablo Palanques Gil">
+    <title>Pablo Palanques Gil</title>
+    <link rel="stylesheet" type="text/css" href="estiloCSS.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vinculamos el script .js externo -->
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="wrapper" class="wrapper">
+    <div id="cabecera" class="cabecera">
+    <header>
+        <h1 id="top" >Pablo Palanques</h1>
+    </header>
+    </div>
+    <div id="navegacion" class="menu">
+    <section>
+        <nav>
+            <div><button id="switchTema" class="switchTema" name="Tema Oscuro" onclick="CambiarModo()"></button></div>
+            <ul>
+                <li><a href="index.html" title="Ir a página principal.">Pablo Palanques</a></li>
+                <li><a href="contacto.html" title="Ir a página de contacto.">Contacto</a></li>
+            </ul>
+        </nav>
+    </section>
+    </div>
+    <main>
+    <div id="contenido" class="contenido">
+    <section>
+        <h2 class="primerh2">Resumen profesional</h2>
+        <p>
+            ¡Hola! &#128075;<br>
+            <br>
+            Me llamo Pablo y soy ingeniero industrial especializado en diseño y producción de maquinaria.<br>
+            Fan declarado de la eficiencia, siempre he sentido una feliz satisfacción al <em>automatizar procesos</em> en todas sus formas posibles, lo que me ha llevado a adentrarme cada vez más en el <em>maravilloso</em> mundo de la <strong>programación</strong>.
+        </p>
+        <p>
+            Y es que, como decía Epicteto: <cite>"Te conviertes en eso a lo que le prestas tu atención"</cite>.
+        </p>
+        <p>
+            Compaginándolo con mi trabajo a tiempo completo, actualmente me encuentro cursando el <abbr title="Ciclo Formativo Grado Superior">CFGS</abbr> <abbr title="Desarrollo de Aplicaciones Web">DAW</abbr> en modalidad semi-presencial. Los motivos que me han llevado a empezar este curso son los siguientes:
+        </p>
+        <div id="razones">
+        <ol>
+            <li><dl><dt><strong>Pasión</strong></dt><dd>Desde ese primer <em>Hola mundo!</em> que despertó mi curiosidad por la programación no he dejado de dedicarle tiempo. Estoy convencido de que es algo a lo que podría dedicarme ya que adoro resolver problemas y la programación abre un mundo infinito en este sentido.</dd>
+            </dl>
+            <blockquote>
+                <pre><code>
+                void main() {
+                    printf("Hola mundo!\n");
+                }
+            </code></pre>
+            </blockquote>
+            </li>
+            <li><dl><dt><strong>Creatividad</strong></dt><dd>Saber programar es una llave para acceder al mundo de las oportunidades de negocio. Cuándo se juntan las ideas y la técnica, sólo es cuestión de tiempo que surja <em>la magia</em>.
+                <br>
+                <picture>
+                    <source media="(max-width: 575px)"
+                    srcset="imagenes/matrix_small.gif">
+                    <source media="(min-width: 576px) and (max-width: 1199px)"
+                    srcset="imagenes/matrix_mid.gif">
+                    <source media="(min-width: 1200px)"
+                    srcset="imagenes/matrix_big.gif">
+                    <img src="imagenes/matrix_big.gif" alt="Código fuente de la película Matrix"  style="max-width: 95%">
+                </picture>
+            </dd></dl></li>
+            <li><dl><dt><strong>Adaptación</strong></dt><dd>Creo que el futuro de la industria (y de todos los sectores) pasan por la <abbr title="Inteligencia Artificial">IA</abbr> y una automatización cada vez más extendida. Saber o no programar en el próximo siglo podría abrir una brecha cultural análoga al alfabetismo en el pasado.</dd></dl></li>
+        </ol>
+        
+        </div>
+        <div>
+            <video src="videos/soy_programador.mp4" controls poster="imagenes/soy_programador.png" width="90%"></video>
+        </div>
+
+
+    </section>
+    <!--<embed src="videos/soy_programador.mp4" type="video/mp4" />-->
+    <section>
+        <h2>Habilidades</h2>
+        <p>En la siguiente tabla desvelo las habilidades duras que más suelen interesar a mis empleadores:</p>
+        <figure>
+        <table id="tabla">
+            <tr>
+                <th>Capturas<br>de muestra</th>
+                <th>Habilidad</th>
+                <th>Software /<br>tecnología</th>
+                <th>Experiencia</th>
+            </tr>
+            <tr>
+                <td><a href="imagenes/Dibujo3D.png" title="Engranajes en 3D"><img src="imagenes/Dibujo3D_th.png" alt="Thumbnail de engranajes en 3D" width="50"></a></td>
+                <td>Diseño 3D</td>
+                <td>SolidWorks</td>
+                <td>Avanzado</td>
+            </tr>
+            <tr>
+                <td><a href="imagenes/Plano2D.png" title="Plano dimensional de una pieza"><img src="imagenes/Plano2D_th.png" alt="Thumbnail de plano de pieza" width="50"></a></td>
+                <td>Diseño 2D</td>
+                <td>AutoCAD</td>
+                <td>Avanzado</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><a href="imagenes/CityIllustrator.png" title="Ilustración simple de una ciudad"><img src="imagenes/CityIllustrator_th.png" alt="Thumbnail de ilustración" width="50"></a></td>
+                <td rowspan="2">Diseño gráfico</td>
+                <td>Photoshop</td>
+                <td rowspan="2">Principiante</td>
+            </tr>
+            <tr>
+                <td>Illustrator</td>
+            </tr>
+            <tr>
+                <td><a href="imagenes/Word.png" title="Memoria técnica en word"><img src="imagenes/Word_th.png" alt="Thumbnail de memoeria en word" width="50"></a></td>
+                <td colspan="2">Microsoft Word</td>
+                <td>Avanzado</td>
+            </tr>
+            <tr>
+                <td><a href="imagenes/Excel.png" title="Datos de consumo energético"><img src="imagenes/Excel_th.png" alt="Thumbnail de datos en excel" width="50"></a></td>
+                <td colspan="2">Microsoft Excel</td>
+                <td>Avanzado</td>
+            </tr>
+            <tr>
+                <td rowspan="2"><a href="imagenes/Unity.png" title="Interfaz de Unity3D"><img src="imagenes/Unity_th.png" alt="Thumbnail de interfaz de Unity3D" width="50"></a></td>
+                <td rowspan="2">Motores<br>de juego</td>
+                <td>Unity 3D</td>
+                <td>Avanzado</td>
+            </tr>
+            <tr>
+                <td>Unreal Engine</td>
+                <td>Principiante</td>
+            </tr>
+            <tr>
+                <td rowspan="4"><a href="imagenes/VisualStudio.png" title="Código C# en VisualStudio"><img src="imagenes/VisualStudio_th.png" alt="Thumbnail de C# en VisualStudio" width="50"></a></td>
+                <td rowspan="4">IDEs</td>
+                <td>Visual Studio</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <td>IntelliJ</td>
+                <td>Principiante</td>
+            </tr>
+            <tr>
+                <td>Eclipse</td>
+                <td>Principiante</td>
+            </tr>
+            <tr>
+                <td>NetBeans</td>
+                <td>Principiante</td>
+            </tr>
+            <tr>
+                <td rowspan="4"><a href="imagenes/VisualStudioCode.png" title="Código XHTML en VisualStudioCode"><img src="imagenes/VisualStudioCode_th.png" alt="Thumbnail de XHTML en VisualStudioCode" width="50"></a></td>
+                <td rowspan="4">Lenguajes de<br>programación</td>
+                <td>C#</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Principiante</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Principiante</td>
+            </tr>
+            <tr>
+                <td>HTML+CSS</td>
+                <td>Principiante</td>
+            </tr>
+        </table>
+        <figcaption>Tabla de habilidades duras</figcaption>
+    </figure>
+        <p>Cabe destacar que el contenido de esta tabla es dinámico, hay habilidades que menguan con el desuso y otras que surgen y crecen, según intereses y necesidades, y espero que esta dinámica se mantenga durante mucho tiempo.</p>
+    
+        <blockquote>"Empiezas a morir cuando dejas de aprender" - Albert Einstein</blockquote>
+    </section>
+    <section>
+    <h2>Aficiones</h2>
+    <p>Cuando no estoy socializando, baso mi ocio en las siguientes actividades:</p>
+    <ul id="aficiones">
+        <li>Deporte<br>
+        <ol id="deportes">
+            <li>Correr</li>
+            <li>Calistenia</li>
+            <li>Patinaje en línea</li>
+        </ol></li>
+        <li>Posibles ideas de negocio.</li>
+        <li>Videojuegos (publiqué uno hace unos años y trabajo en el siguiente)</li>
+    </ul>
+    <picture>
+        <source media="(max-width: 575px)"
+        srcset="imagenes/patines_small.jpg">
+        <source media="(min-width: 576px) and (max-width: 1199px)"
+        srcset="imagenes/patines_mid.jpg">
+        <source media="(min-width: 1200px)"
+        srcset="imagenes/patines_big.jpg">
+        <img src="imagenes/patines_big.jpg" alt="Unos patines"  style="max-width: 95%">
+    </picture>
+    </section>
+    <section>
+    <h2>Temas de interés</h2>
+    <p>Considero muy interesante de lo que habla uno cuando está en un estado de conciencia <em>ligeramente</em> alterado. En mi caso, tras unas cervezas me complacerá tratar temas como:</p>
+    <ul id="temas">
+        <li>Las consecuencias socio-económicas de la <abbr title="Inteligencia Artificial">IA</abbr> por la automatización exponencial que se nos viene encima en los próximos años.</li>
+        <li>El desarrollo y las implicaciones de la industria espacial y la posible fusión nuclear.</li>
+        <li>La <dfn title="Si el universo es tan viejo y tan extenso, ¿dónde están todos los aliens?">paradoja de Fermi</dfn>.</li> 
+    </ul> 
+    <picture>
+        <source media="(max-width: 575px)"
+        srcset="imagenes/ai_small.jpg">
+        <source media="(min-width: 576px) and (max-width: 1199px)"
+        srcset="imagenes/ai_mid.jpg">
+        <source media="(min-width: 1200px)"
+        srcset="imagenes/ai_big.jpg">
+        <img src="imagenes/ai_big.jpg" alt="Simbiosis entre la humanidad y la IA"  style="max-width: 95%">
+    </picture>
+
+    </section>
+    <section>
+    <h2>Contacto</h2>
+    <p>Si quieres saber más, mándame un email:</p>
+        <a href="contacto.html" title="Ir a página de contacto."><strong>¡Contactar!</strong></a>
+        <picture>
+            <source media="(max-width: 575px)"
+            srcset="imagenes/contact_small.jpg">
+            <source media="(min-width: 576px) and (max-width: 1199px)"
+            srcset="imagenes/contact_mid.jpg">
+            <source media="(min-width: 1200px)"
+            srcset="imagenes/contact_big.jpg">
+            <img src="imagenes/contact_big.jpg" alt="Contact me escrito en una nota"  style="max-width: 95%">
+        </picture>
+
+    </section>
+</div>
+</main>
+<div id="pie" class="pie">
+<footer>
+    <p>¡Has llegado al final, gracias por tu visita!</p>
+    <a href="#top" title="Nos lleva al inicio de esta página">Volver arriba.</a><br>
+</footer>
+</div>
+</div>
+</body>
+</html>
