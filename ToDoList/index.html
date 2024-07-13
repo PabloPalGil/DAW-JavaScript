@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de Lista de Tareas">
+    <meta name="author" content="Pablo Palanques Gil">
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" href="estiloCSS.css" media="screen" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vinculamos el script .js externo -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>To-Do List</h1>
+            <h2>by Pablo Palanques Gil</h2>
+        </header>
+        <div id="Entrada">
+            <h2 class="centrar">Lista de Tareas</h2>
+            <div id="menuEntrada">
+                <input type="text" id="tareaNueva" placeholder="Introduce tarea..." size="50" />
+                <button id="añadir" onclick="Añadir()">Añadir tarea</button>
+                <button id="limpiar" onclick="Limpiar()">Eliminar todo</button>
+            </div>
+            
+        </div>
+        <div id="Listado">
+            <ul id="contenedorTareas" class="To-Do List"></ul>
+        </div>
+    </div>
+</body>
+</html>

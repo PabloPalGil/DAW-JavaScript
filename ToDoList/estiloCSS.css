@@ -1,0 +1,132 @@
+/*Ni márgenes ni padding*/
+* { 
+    margin:0;
+    padding:0;
+    line-height: 1.7;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*Definimos el tamaño de los iconos*/
+img{
+    height: 30px;
+    width: 30px;
+}
+
+/*Estilo de las tareas*/
+ul li {
+    position: relative;
+    height:60px;
+    background: #d9d9d9;
+    font-size: 18px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    text-indent: 60px;
+}
+/*Estilo para las tareas impares*/
+ul li:nth-child(odd) {
+    background: #f3f3f3;
+}
+ul li:nth-child(odd):hover {
+    background: #ebebeb;
+}
+
+  /* Resaltar al pasar el ratón por encima (hover) */
+ul li:hover {
+    background: #cfcfcf;
+}
+/*Estilo al marcar como completadas (check)*/
+ul li.check {
+    background: #0a7e13;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li.check:hover {
+    background:darkgreen;
+}
+/* Estilo del botón de check */
+.checkIcon {
+    cursor: pointer;
+    position: absolute;
+    right: 20;
+    bottom:0;
+    padding: 12px 16px;
+    display:inline-block;
+}
+/* Estilo del botón de eliminar (close) */
+.close {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    height:30px;
+    padding: 15px 14px;
+    display:inline-block;
+}
+.close:hover {
+    background-color: #ff3f31;
+}
+/* Cabecera */
+header {
+    background-color: #4391ff;
+    padding: 15px 40px;
+    color: white;
+    text-align: center;
+}
+header h2 {
+    text-align:right;
+    font-size: 12px;
+    padding: 20px, 20px;
+}
+/* Entrada */
+#Entrada {
+    background-color: #4391ff;
+    padding-bottom: 40px;
+    color: rgb(255, 255, 255);
+    display:flex;
+    flex-flow: column;
+}
+#menuEntrada {
+    display:flex;
+    justify-content:center;
+}
+/*Centrar*/
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+/*Botones*/
+#añadir {
+    font-weight: bold;
+    border:0;
+    margin:2px;
+    border-radius:3px;
+    width:80px;
+    height:50px;
+}
+#añadir:hover {
+    background-color: #a9a9a9;
+}
+#limpiar {
+    font-weight: bold;
+    border:0;
+    margin-top:10px;
+    border-radius:3px;
+    width:80px;
+    height:50px;
+    margin-left:10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#limpiar:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/* Entrada */
+#tareaNueva {
+    margin: 0;
+    border: none;
+    width: 80%;
+    padding: 12px;
+    float: left;
+    font-size: 16px;
+    border-radius: 3px;
+}
